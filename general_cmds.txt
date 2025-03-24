@@ -1,0 +1,24 @@
+# Use Wireshark to scan for login attempts within the box (via RDP) and use IP address to block
+New-NetFirewallRule -DisplayName "Block Specific IP" -Direction Inbound -Action Block -RemoteAddress <IP_Address>
+
+Example: New-NetFirewallRule -DisplayName "Block Specific IP" -Direction Inbound -Action Block -RemoteAddress "10.3.1.21"
+
+# Remove users (manually) that are created
+netplwiz (search to in the Windows search bar)
+
+# alternative (manually)
+https://www.windowscentral.com/how-sign-out-other-users-windows-10
+- command prompt as administrator
+- "query session"
+- logoff <ID>
+
+# Reverse Shell Exploit attempt:
+
+Using metasploit, follow these steps...:
+https://www.geeksforgeeks.org/creating-a-persistent-reverse-shell-with-metasploit-in-kali-linux/?ref=lbp
+
+If last step doesn't work...:
+https://www.infosecmatter.com/why-your-exploit-completed-but-no-session-was-created-try-these-fixes/
+
+Possible alternative:
+https://www.geeksforgeeks.org/working-with-payload-metasploit-in-kali-linux/?ref=next_article
