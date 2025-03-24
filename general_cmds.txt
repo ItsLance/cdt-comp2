@@ -33,3 +33,18 @@ https://www.infosecmatter.com/why-your-exploit-completed-but-no-session-was-crea
 
 Possible alternative:
 https://www.geeksforgeeks.org/working-with-payload-metasploit-in-kali-linux/?ref=next_article
+
+New Guardian1 and Guardian2 passwords:
+# Set the new passwords for the users
+$User1 = "Guardian1"
+$Password1 = ConvertTo-SecureString "twoToooieNiiiiickels" -AsPlainText -Force
+
+$User2 = "Guardian2"
+$Password2 = ConvertTo-SecureString "pl8c@rdM5el5trom;" -AsPlainText -Force
+
+# Change the passwords
+Set-LocalUser -Name $User1 -Password $Password1
+Set-LocalUser -Name $User2 -Password $Password2
+
+# Output the result
+Write-Host "Passwords for $User1 and $User2 have been successfully changed."
