@@ -5,7 +5,7 @@ $LCoramarPassword = ConvertTo-SecureString "austra1iapengu1nkagur@" -AsPlainText
 # Secure the "bloodhunter" user
 Set-LocalUser -Name "bloodhunter" -PasswordNeverExpires $false   # Ensure password expires
 Set-LocalUser -Name "bloodhunter" -Password $BloodhunterPassword # Ensure the password is securely set
-Set-LocalUser -Name "bloodhunter" -CannotChangePassword $false   # Allow user to change their password (change to $true if needed)
+Set-LocalUser -Name "bloodhunter" -CannotChangePassword $true   # Allow user to change their password (change to $true if needed)
 
 # Secure the "LCoramar" admin user
 Set-LocalUser -Name "LCoramar" -PasswordNeverExpires $false    # Ensure password expires
