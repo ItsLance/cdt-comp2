@@ -1,3 +1,13 @@
+DAY 2 PLAN:
+1. LOGIN
+2. CHANGE PASSWORDS
+3. FORCE LOGOUT
+4. REMOVE USERS (not the two main or grey team or game master)
+5. DOWNLOAD WIRESHARK
+6. BLOCK IPS (if detected) manually
+7. Reverse shell integration (maybe)
+
+
 BOON: NotMoneyGangCrew
 # Use Wireshark to scan for login attempts within the box (via RDP) and use IP address to block
 New-NetFirewallRule -DisplayName "Block Specific IP" -Direction Inbound -Action Block -RemoteAddress <IP_Address>
