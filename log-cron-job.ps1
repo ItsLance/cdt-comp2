@@ -1,5 +1,5 @@
 # Customize these variables:
-$party = "Delta Knights"                # Name of the party to be logged
+$party = "The Delta Knights"                # Name of the party to be logged
 $logbookPath = "$env:SystemRoot\System32\logbook.txt"  # Location of the logbook file
 $updateScriptPath = "$env:ProgramData\.update_logbook.ps1"  # Path for the hidden update script
 $taskName = "LogbookUpdateTask"        # Task name for the scheduled task
