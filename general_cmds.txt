@@ -1,3 +1,4 @@
+BOON: NotMoneyGangCrew
 # Use Wireshark to scan for login attempts within the box (via RDP) and use IP address to block
 New-NetFirewallRule -DisplayName "Block Specific IP" -Direction Inbound -Action Block -RemoteAddress <IP_Address>
 
