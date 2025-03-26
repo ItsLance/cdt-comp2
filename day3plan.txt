@@ -1,0 +1,13 @@
+DAY 3:
+1. Continue establishing and hardening Windows machine with powershell. Use hoaxshell in the event of a breach.
+2. Configure group policy to disable priv esc
+3. With enough time, go for the neutral zone and other Linux machines.
+4. Tackle SQL injection into Apache Linux machines to siphon passwords.
+
+# Hoaxshell implementation in the event of a forced logout
+https://kalilinuxtutorials.com/hoaxshell/ 
+
+# Windows local privilege escalation
+https://xorond.com/posts/2021/04/windows-local-privilege-escalation/
+
+# 
